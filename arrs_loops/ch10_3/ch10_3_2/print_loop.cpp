@@ -16,6 +16,9 @@ int get_value()
 			std::cin.clear(); //reset error flags
 			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 		}
+		else if (user_value < 1 || user_value > 9)
+			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
 		else
 		{
 			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
